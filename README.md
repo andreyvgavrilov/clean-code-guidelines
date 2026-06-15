@@ -20,6 +20,6 @@ If you use "fire and forget" approach with coding tools, implementing features w
 
 ## Additional notes
 
-- OpenAI Codex require explicit user instructions to launch subagents at the moment. Use something like this in your initial prompt for each session: *For this entire session, you are authorized to use subagents whenever AGENTS.md requires them*
+- OpenAI Codex require explicit user instructions to launch subagents at the moment. Use something like this in your initial prompt for each session: *For this entire session, you are authorized to use subagents whenever AGENT.md requires them*
 - By default subagents can't interact with user directly. So, this file includes relayer logic to interact with user through orchestrator.
 - This file is agnostic to programming languages and frameworks (as long as they support tests), so it may need project-specific tweaks
