@@ -2,14 +2,14 @@
 
 Basic instruction set for Claude Code and other coding tools.
 
-## Version 1.1
+## Version 1.1.1
 
 New version, based on feedback and further refining:
 
 1. Split the description from AGENTS.md to a skill. That way the logic will not pollute context for subagents and requests unrelated to feature implementation.
 2. Use tool-specific subagent definition for maximum effectiveness.
 
-Codex and Antigravity support included. Claude is on the way.
+Claude implementation not tested yet.
 
 ## Problems
 
