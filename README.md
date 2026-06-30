@@ -2,6 +2,15 @@
 
 Basic instruction set for Claude Code and other coding tools.
 
+## Version 1.1
+
+New version, based on feedback and further refining:
+
+1. Split the description from AGENTS.md to a skill. That way the logic will not pollute context for subagents and requests unrelated to feature implementation.
+2. Use tool-specific subagent definition for maximum effectiveness.
+
+Codex and Antigravity support included. Claude is on the way.
+
 ## Problems
 
 - LLM coding pitfalls from [Andrej Karpathy's post](https://x.com/karpathy/status/2015883857489522876)
@@ -20,6 +29,5 @@ If you use "fire and forget" approach with coding tools, implementing features w
 
 ## Additional notes
 
-- OpenAI Codex require explicit user instructions to launch subagents at the moment. Use something like this in your initial prompt for each session: *For this entire session, you are authorized to use subagents whenever AGENTS.md requires them*
 - By default subagents can't interact with user directly. So, this file includes relayer logic to interact with user through orchestrator.
 - This file is agnostic to programming languages and frameworks (as long as they support tests), so it may need project-specific tweaks
